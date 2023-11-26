@@ -54,3 +54,18 @@ const obs = new IntersectionObserver(
   }
 );
 obs.observe(sectionHeroEl);
+
+document
+  .querySelector(".cta-form")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    emailjs.sendForm("service_c4u0gjb", "template_qe6qwjl", this).then(
+      function () {
+        console.log("SUCCESS!");
+      },
+      function (error) {
+        console.log("FAILED...", error);
+      }
+    );
+  });
