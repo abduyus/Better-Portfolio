@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon-png.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -224,11 +227,16 @@
           <p class="subheading">About Me</p>
           <div class="grid grid--2-cols">
             <div class="about-img">
-              <img
-                src="img/laptop.jpg"
-                alt="Laptop on a wooden table with a code editor open"
-                class="about-me--img"
-              />
+              <picture>
+                <source srcset="img/compressed/laptop.webp" type="image/webp" />
+                <source srcset="img/laptop.png" type="image/png" /> 
+                
+                <img
+                  src="img/laptop.jpg"
+                  alt="Laptop on a wooden table with a code editor open"
+                  class="about-me--img"
+                />
+              </picture>
             </div>
             <div class="about-text">
               <h2 class="heading-secondary">A brief introduction about me</h2>
