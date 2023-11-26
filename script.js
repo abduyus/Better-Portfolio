@@ -63,6 +63,8 @@ document
     emailjs.sendForm("service_c4u0gjb", "template_qe6qwjl", this).then(
       function () {
         console.log("SUCCESS!");
+        document.querySelector(".cta-form").reset(); // Clear the form
+        alert("Message sent successfully!"); // Display a success message
       },
       function (error) {
         console.log("FAILED...", error);
