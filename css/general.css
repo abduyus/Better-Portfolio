@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  columns: #555;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  color: #333;
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  color: #0b3256;
+  font-weight: 700;
+  line-height: 1.05;
+  font-size: 5.7rem;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  color: #030d15;
+  font-size: 4.4rem;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.btn:link,
+.btn:visited,
+.btn {
+  display: inline-block;
+  background-color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  text-decoration: none;
+
+  transition: all 0.5s;
+
+  /* Only neccessary for .btn */
+  border: none;
+  cursor: pointer;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1c7ed6;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 4.8rem;
+}

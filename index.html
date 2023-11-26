@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css">
+    <title>Yusuf Abdur-Rasheed</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img src="img/logo.svg" alt="Logo" class="logo" />
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="#about" class="main-nav-link">About Me</a></li>
+          <li><a href="#skills" class="main-nav-link">Skills</a></li>
+          <li><a href="#projects" class="main-nav-link">Projects</a></li>
+          <li>
+            <a href="#contact" class="main-nav-link btn btn--projects">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="hidden-btn"></div>  
+      <div class="hidden-btn"></div>  
+      <div class="hidden-btn"></div>  
+      <div class="hidden-btn"></div>  
+      <div class="hidden-btn"></div>  
+      <div class="hidden-btn"></div>  
+      <div class="hidden-btn"></div>  
+      <div class="hidden-btn"></div>  
+      <div class="hidden-btn"></div>  
+      <div class="hidden-btn"></div>  
+      <button class="btn-mobile-nav">
+        <!-- my svg icons -->
+        <ion-icon name="menu-outline" class="icon-mobile-nav"></ion-icon>
+      </button>
+      
+      <button class="btn-mobile-nav close-btn">
+        <!-- my svg icons -->
+        <ion-icon name="close-outline" class="icon-mobile-nav"></ion-icon>
+      </button>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="container hero">
+          <div class="hero-text">
+            <h1 class="heading-primary hero-heading">
+              Hi 👋 <br />I'm Yusuf Abdur-Rasheed
+            </h1>
+            <p class="hero-subheading">
+              I am a student and junior web developer originally from South -
+              East Pakistan, based in Solihull, England 📍
+            </p>
+
+            <!-- <a target="_blank" href="https://github.com/abduyus">
+              <img
+                src="img/github.png"
+                alt="Link to my github account"
+                class="github-img"
+              />
+            </a> -->
+          </div>
+
+          <div class="tech-stack">
+            <img src="img/html-5.png" alt="HTML Logo" class="tech-stack--img" />
+            <img src="img/css.png" alt="CSS Logo" class="tech-stack--img" />
+            <img
+              src="img/python.png"
+              alt="Python Logo"
+              class="tech-stack--img"
+            />
+            <img
+              src="img/django.png"
+              alt="django Logo"
+              class="tech-stack--img"
+            />
+            <img
+              src="img/flask.webp"
+              alt="Flask Logo"
+              class="tech-stack--img"
+            />
+            <img src="img/git.png" alt="Git Logo" class="tech-stack--img" />
+          </div>
+          <div class="btn-div">
+            <a href="#" class="btn btn--projects">My Projects</a>
+            <a href="#" class="btn btn--abtme">Learn More &darr;</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-about" id="about">
+        <div class="container about-div">
+          <p class="subheading">About Me</p>
+          <div class="grid grid--2-cols">
+            <div class="about-img">
+              <img
+                src="img/laptop.jpg"
+                alt="Laptop on a wooden table with a code editor open"
+                class="about-me--img"
+              />
+            </div>
+            <div class="about-text">
+              <h2 class="heading-secondary">A brief introduction about me</h2>
+              <p class="about-me--text">
+                My name is Yusuf, I am 13 years old and I am a student currently
+                studying in Solihull School. I really enjoy making websites
+                using HTML and CSS and have done a couple of django projects
+                before aswell. I can currently make any static website which
+                fits any mood you would want. I am currently learning JavaScript
+                and wanting to learn various frameworks like React.JS and
+                Node.JS
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-skills" id="skills">
+        <div class="">
+          <p class="subheading">Skills</p>
+
+          <!-- Coding card -->
+          <div class="skill-cards">
+            <figure class="skill-card card--frontend">
+              <div class="card-icon-container code-background">
+
+                <span
+                ><ion-icon name="code-outline" class="card-icon"></ion-icon
+                  ></span>
+                </div>
+              <div class="card-main-body">
+                <p class="card-subheading">Frontend Developer</p>
+                <p class="card-text">
+                I am a passionate frontend developer that codes from scratch to
+                make the best ideas come to life.
+              </p>
+              <p class="card-subheading--sm">Languages I speak</p>
+              <ul class="card-list">
+                <li class="card-list--item">HTML</li>
+                <li class="card-list--item">CSS</li>
+                <li class="card-list--item">Django</li>
+                <li class="card-list--item">JavaScript (a bit)</li>
+              </ul>
+              <p class="card-subheading--sm">Tools I use</p>
+              <p class="tools">Visual Studio Code, Notion, Firefox Developer Edition</p>
+            </figure>
+            
+            <figure class="skill-card card--design">
+              <div class="card-icon-container brush-background">
+                <span
+                ><ion-icon name="brush-outline" class="card-icon"></ion-icon
+                  ></span>
+                </div>
+                <div class="card-main-body">
+                  <p class="card-subheading">Elegant Designer</p>
+                  <p class="card-text">
+                  I enjoy designing simple yet elegant designs to make productive layouts that suite your need.
+                </p>
+                <p class="card-subheading--sm">Things I design</p>
+                <ul class="card-list">
+                  <li class="card-list--item">UI</li>
+                  <li class="card-list--item">UX</li>
+                  <li class="card-list--item">Desktop First Websites</li>
+                  <li class="card-list--item">Mobile First Website</li>
+                </ul>
+                <p class="card-subheading--sm">Tools I use</p>
+                <p class="tools">Figma, Pen and paper, Google Fonts, Coolors</p>
+              </figure>
+              <figure class="skill-card card--deploy">
+                <div class="card-icon-container rocket-background">
+                  <span
+                  ><ion-icon name="rocket-outline" class="card-icon"></ion-icon
+                    ></span>
+                  </div>
+                  <div class="card-main-body">
+                    <p class="card-subheading">Backend Developer</p>
+                    <p class="card-text">
+                    I can create time saving automations and AI models that will half your workload to manage.
+                  </p>
+                  <p class="card-subheading--sm">Things I create</p>
+                  <ul class="card-list">
+                    <li class="card-list--item">Automations</li>
+                    <li class="card-list--item">AI Models</li>
+                    <li class="card-list--item">Desktop windows</li>
+                    <li class="card-list--item">Data Analyser</li>
+                  </ul>
+                  <p class="card-subheading--sm">Tools I use</p>
+                  <p class="tools">Pycharm, Jupyter Notebook, Anaconda, Panda</p>
+                </figure>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-projects" id="projects">
+      <p class="subheading">Projects</p>
+      <div class="container project-div">
+      <figure class="project">
+        
+        <div class="project--text-div">
+          <p class="project-subheading">Omnifood</p>
+          <p class="project-desc">This is a project that I did for a course for a made up food company that chooses and delivers your meals.</p>
+          <div class="project-languages">
+            <span class="project-lang lang--html">HTML</span>
+            <span class="project-lang lang--css">CSS</span>
+            <span class="project-lang lang--python">JavaScript</span>
+          </div>
+          <a class="btn btn--demo btn--demo-1" target="_blank" href="http://omnifood-yusuf.netlify.app">Live Demo</a>
+          <a class="btn btn--abtme" target="_blank" href="https://github.com/abduyus/07-Omnifood-Desktop">View Code</a>
+        </div>
+        <div class="project--img-div">
+          <img src="img/projects/omnifood.png" class="project-img" alt="Picture of Omnifood Project that I made">
+        </div>
+
+      </figure>
+      <figure class="project">
+        <div class="project--img-div">
+          <img src="img/projects/weather.png" class="project-img" alt="Picture of Omnifood Project that I made">
+        </div>
+        <div class="project--text-div">
+          <p class="project-subheading">Weather App</p>
+          <p class="project-desc">This is a weather forecast app that can plot the temperature in &deg;C on a graph. You can also use pictures for any city you choose.</p>
+          <div class="project-languages">
+            <span class="project-lang lang--html">HTML</span>
+            <span class="project-lang lang--css">CSS</span>
+            <span class="project-lang lang--python">Python</span>
+          </div>
+          <a class="btn btn--demo btn--demo-2" target="_blank" href="https://yusuf-weather.streamlit.app/ ">Live Demo</a>
+          <a class="btn btn--abtme" target="_blank" href="https://github.com/abduyus/App7_Weather_forecast_data_app">View Code</a>
+        </div>
+        
+
+      </figure>
+      <figure class="project">
+        <div class="project--text-div">
+          <p class="project-subheading">Webcam Object detection</p>
+          <p class="project-desc">This is a app that detects when new objects enter the frame using a camera/webcam. It then sends an email to the account with the image of the new object entering the frame.</p>
+          <div class="project-languages">
+            <span class="project-lang lang--python">Python</span>
+          </div>
+          <a class="btn btn--demo btn--demo-3" target="_blank" href="https://clipchamp.com/watch/OOektnwX1b1">Live Demo</a>
+          <a class="btn btn--abtme" target="_blank" href="https://github.com/abduyus/App9---Email-Webcam-Object-Detection">View Code</a>
+        </div>
+        <div class="project--img-div">
+          <img src="img/projects/object_detection.png" class="project-img" alt="Picture of Omnifood Project that I made">
+        </div>
+      </figure>
+      </div>
+      </section>
+      <section class="section-cta" id="contact">
+        <p class="subheading cta-subheading">Contact me</p>
+        <div class="container cta">
+          <div class="cta-text-box">
+            <h2 class="heading-secondary">Contact me below</h2>
+            <p class="cta-text">Feel free to contact me about any enquiries or job offers. I will try my best to respond to you as soon as possible.</p>
+            <div class="cta-form-div">
+              <form name="contact-me" class="cta-form">
+                  <div>
+                    
+                    <label for="name">Full Name</label>
+                    <input type="text" placeholder="John Smith" name="cta-form--name" id="name" required>
+                  </div>
+                  <div>
+                    
+                    <label for="email">Email Address</label>
+                    <input type="email" placeholder="me@example.com" name="cta-form--email" id="email" required>
+                  </div>
+                  
+                  <div>                 
+                    <label for="message">Your message:</label>
+                  <input type="text" placeholder="Enter your message here" name="cta-form--message" id="message" required>
+                </div>
+                
+                <div>
+                  
+                  <label for="select">What is your message about?</label>
+                  <select name="" id="select" required>
+                    <option value="">Choose one option</option>
+                    <option value="job">Job Offers</option>
+                    <option value="enquiries">Business Enquiries</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+
+                <button class="btn btn--form">Send Your Message</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="cta-img-box">
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-text-box">
+        <p class="footer-text">Copyright &copy; of Yusuf Abdur-Rasheed <span>2027</span>.</p>
+      </div>
+      <div class="footer-img">
+        <a target="_blank" href="https://github.com/abduyus">
+          <img src="img/github.png" class="foot-img" alt="Github logo linking to my Github page.">
+        </a>
+
+      </div>
+    </footer>
+  </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  <script src="script.js"></script>
+</html>
