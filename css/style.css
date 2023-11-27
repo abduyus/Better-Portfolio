@@ -92,6 +92,14 @@ Secondary color: #FFD700;
   box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
 }
 
+.logo-anim--45 {
+  display: none;
+}
+
+.logo-anim:last-child {
+  display: none;
+}
+
 .logo-anim {
   animation: fill 0.5s ease forwards 7s;
 }
