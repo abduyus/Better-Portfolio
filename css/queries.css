@@ -223,6 +223,14 @@
     display: block;
     margin: auto;
   }
+
+  .project-desc {
+    margin-bottom: 4.8rem;
+  }
+
+  .project-languages {
+    margin-bottom: 8rem;
+  }
 }
 
 @media (max-width: 25em) {
