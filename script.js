@@ -1,6 +1,7 @@
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
 const closeBtnEl = document.querySelector(".close-btn");
+const navLinks = document.querySelectorAll(".main-nav-link:link");
 
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
@@ -27,6 +28,10 @@ allLinks.forEach(function (link) {
       e.preventDefault();
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
+
+    if (link.classList.contains("main-nav-link")) {
+      headerEl.classList.toggle("nav-open");
     }
   });
 });
