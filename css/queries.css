@@ -21,9 +21,13 @@
   }
 }
 
-@media (max-width: 62em) {
+@media (max-width: 66em) {
   html {
     font-size: 50%;
+  }
+
+  .hero {
+    margin: 4.8rem;
   }
 
   .logo-anim.logo--anim-2 {
@@ -88,7 +92,23 @@
   }
 }
 
-@media (max-width: 50em) {
+@media (max-width: 58em) {
+  .project {
+    margin: 4.8rem;
+  }
+
+  .skill-cards {
+    row-gap: 8rem;
+  }
+
+  .skill-card {
+    margin: 0 9.6rem;
+  }
+
+  .project-languages {
+    gap: 4.8rem;
+    font-size: 1.6rem;
+  }
   .tech-stack {
     gap: 3.4rem;
   }
