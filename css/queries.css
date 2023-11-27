@@ -183,6 +183,15 @@
     font-size: 40%;
   }
 
+  .logo-anim.logo--anim-2 {
+    display: none;
+  }
+
+  .logo-anim.logo--anim-3 {
+    display: block;
+    margin: auto;
+  }
+
   .cta {
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 1fr;
@@ -205,10 +214,65 @@
   html {
     font-size: 30%;
   }
+
+  .logo-anim.logo-anim.logo--anim-3 {
+    display: none;
+  }
+
+  .logo-anim.logo--anim-4 {
+    display: block;
+    margin: auto;
+  }
 }
 
 @media (max-width: 25em) {
   html {
     font-size: 25%;
+  }
+
+  .logo-anim.logo--anim-4 {
+    display: none;
+  }
+
+  .logo-anim.logo--anim-5 {
+    display: block;
+    margin: auto;
+  }
+}
+
+.no-flexbox-gap .nav-links:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .tech-stack:not(:last-child) {
+  margin-right: 6.8rem;
+}
+
+.no-flexbox-gap .btn-div:not(:last-child) {
+  margin-right: 4rem;
+}
+
+.no-flexbox-gap .card-list li:not(:last-child) {
+  margin-bottom: 0.4rem;
+}
+
+.no-flexbox-gap .project-languages:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+@media (max-width: 58em) {
+  .no-flexbox-gap .project-languages:not(:last-child) {
+    margin-right: 4.8rem;
+  }
+}
+
+@media (max-width: 66em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
   }
 }

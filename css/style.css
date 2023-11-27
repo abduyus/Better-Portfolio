@@ -92,7 +92,19 @@ Secondary color: #FFD700;
   box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
 }
 
-.logo-anim--45 {
+.logo--anim-2 {
+  display: none;
+}
+
+.logo-anim.logo--anim-3 {
+  display: none;
+}
+
+.logo-anim.logo--anim-4 {
+  display: none;
+}
+
+.logo-anim.logo--anim-5 {
   display: none;
 }
 
