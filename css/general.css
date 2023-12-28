@@ -11,7 +11,16 @@ html {
 
 body {
   font-family: "Inter", sans-serif;
-  columns: #555;
+  color: #555;
+}
+
+.section {
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }
 
 .container {
