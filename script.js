@@ -16,6 +16,7 @@ const allLinks = document.querySelectorAll("a:link");
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
     const href = link.getAttribute("href");
+    const navLinks = document.querySelectorAll(".main-nav-link");
 
     // Scroll back to top
     if (href === "#") {
@@ -28,6 +29,9 @@ allLinks.forEach(function (link) {
       e.preventDefault();
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
+      navLinks.forEach((link) => link.classList.remove("selected"));
+      console.log(e.target);
+      e.target.classList.add("selected");
     }
 
     if (link.classList.contains("main-nav-link")) {
@@ -75,15 +79,43 @@ document
     );
   });
 
+// const revealSection = function (entries, observer) {
+//   const [entry] = entries;
+
+//   if (!entry.isIntersecting) return;
+
+//   entry.target.classList.remove("section--hidden");
+//   observer.unobserve(entry.target);
+// };
+
+// const sectionObserver = new IntersectionObserver(revealSection, {
+//   root: null,
+//   threshold: 0.15,
+// });
+
+// allSections.forEach(function (section) {
+//   sectionObserver.observe(section);
+//   section.classList.add("section--hidden");
+// });
 const allSections = document.querySelectorAll(".section");
 
 const revealSection = function (entries, observer) {
-  const [entry] = entries;
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      // Remove the selected class from all navigation links
+      navLinks.forEach((link) => link.classList.remove("selected"));
 
-  if (!entry.isIntersecting) return;
+      // Find the navigation link corresponding to the currently intersecting section
+      const correspondingNavLink = document.querySelector(
+        `a[href="#${entry.target.id}"]`
+      );
 
-  entry.target.classList.remove("section--hidden");
-  observer.unobserve(entry.target);
+      // Add the selected class to the corresponding navigation link
+      if (correspondingNavLink) {
+        correspondingNavLink.classList.add("selected");
+      }
+    }
+  });
 };
 
 const sectionObserver = new IntersectionObserver(revealSection, {
@@ -93,5 +125,28 @@ const sectionObserver = new IntersectionObserver(revealSection, {
 
 allSections.forEach(function (section) {
   sectionObserver.observe(section);
-  section.classList.add("section--hidden");
 });
+
+// Get a reference to the hero section and the "Home" link
+const heroSection = document.querySelector(".section-hero");
+const homeLink = document.querySelector('a[href="#home"]');
+
+// Define the function that will be called when the hero section enters or exits the viewport
+const handleHeroSectionIntersect = (entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      // The hero section has entered the viewport
+      navLinks.forEach((link) => link.classList.remove("selected"));
+      homeLink.classList.add("selected");
+    } else {
+      // The hero section has exited the viewport
+      homeLink.classList.remove("selected");
+    }
+  });
+};
+
+// Create an Intersection Observer that will call handleHeroSectionIntersect
+const observer = new IntersectionObserver(handleHeroSectionIntersect);
+
+// Start observing the hero section
+observer.observe(heroSection);
