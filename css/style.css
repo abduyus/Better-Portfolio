@@ -43,6 +43,25 @@ Secondary color: #FFD700;
   z-index: 999;
 }
 
+.main-nav-link.contact-link:link,
+.main-nav-link.contact-link:visited {
+  background-color: #8ecaff;
+  color: #fff;
+
+  /* box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.17); */
+  transition: all 0.5s;
+}
+
+.contact-link.selected {
+  background-color: #1c7ed6;
+  color: #fff;
+}
+
+.main-nav-link.contact-link:hover,
+.main-nav-link.contact-link:active {
+  background-color: #1c7ed6;
+}
+
 .selected {
   background-color: #e9ecef;
   /* margin-left: -3.15rem; */
@@ -60,7 +79,8 @@ Secondary color: #FFD700;
   font-weight: 600;
   text-decoration: none;
   font-size: 1.8rem;
-  color: #555;
+  /* color: #555; */
+  color: #777;
   transition: all 0.3s;
   padding: 1.6rem 1.8rem;
   border-radius: 3rem;
