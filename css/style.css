@@ -52,11 +52,11 @@ Secondary color: #FFD700;
   transition: all 0.5s;
 }
 
-.contact-link.selected {
+/*.contact-link.selected {
   background-color: #1c7ed6;
   color: #fff;
 }
-
+*/
 .main-nav-link.contact-link:hover,
 .main-nav-link.contact-link:active {
   background-color: #1c7ed6;
