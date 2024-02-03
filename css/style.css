@@ -45,21 +45,26 @@ Secondary color: #FFD700;
 
 .main-nav-link.contact-link:link,
 .main-nav-link.contact-link:visited {
-  background-color: #8ecaff;
-  color: #fff;
+  color: #1c7ed6;
 
-  /* box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.17); */
   transition: all 0.5s;
 }
 
-/*.contact-link.selected {
-  background-color: #1c7ed6;
-  color: #fff;
-}
-*/
 .main-nav-link.contact-link:hover,
 .main-nav-link.contact-link:active {
   background-color: #1c7ed6;
+  color: #fff;
+}
+
+.main-nav-link.contact-link.selected:link,
+.main-nav-link.contact-link.selected:visited {
+  background-color: #0e3f6b;
+  color: #fff;
+}
+
+.main-nav-link.contact-link.selected:hover,
+.main-nav-link.contact-link.selected:active {
+  color: #8ecaff;
 }
 
 .selected {
