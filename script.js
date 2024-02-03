@@ -79,7 +79,7 @@ document
     );
   });
 
-// const revealSection = function (entries, observer) {
+// const revealSections = function (entries, observer) {
 //   const [entry] = entries;
 
 //   if (!entry.isIntersecting) return;
@@ -88,15 +88,18 @@ document
 //   observer.unobserve(entry.target);
 // };
 
-// const sectionObserver = new IntersectionObserver(revealSection, {
+// const sectionObservers = new IntersectionObserver(revealSections, {
 //   root: null,
 //   threshold: 0.15,
 // });
 
 // allSections.forEach(function (section) {
-//   sectionObserver.observe(section);
+//   sectionObservers.observe(section);
 //   section.classList.add("section--hidden");
 // });
+
+// test
+
 const allSections = document.querySelectorAll(".section");
 
 const revealSection = function (entries, observer) {
@@ -117,7 +120,7 @@ const revealSection = function (entries, observer) {
     }
   });
 };
-
+// ///////
 const sectionObserver = new IntersectionObserver(revealSection, {
   root: null,
   threshold: 0.15,
