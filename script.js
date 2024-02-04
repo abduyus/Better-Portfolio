@@ -79,24 +79,28 @@ document
     );
   });
 
-// const revealSections = function (entries, observer) {
-//   const [entry] = entries;
+const allSectionss = document.querySelectorAll(".section");
 
-//   if (!entry.isIntersecting) return;
+console.log(allSectionss);
 
-//   entry.target.classList.remove("section--hidden");
-//   observer.unobserve(entry.target);
-// };
+const revealSections = function (entries, observer) {
+  const [entry] = entries;
 
-// const sectionObservers = new IntersectionObserver(revealSections, {
-//   root: null,
-//   threshold: 0.15,
-// });
+  if (!entry.isIntersecting) return;
 
-// allSections.forEach(function (section) {
-//   sectionObservers.observe(section);
-//   section.classList.add("section--hidden");
-// });
+  entry.target.classList.remove("section--hidden");
+  observer.unobserve(entry.target);
+};
+
+const sectionObservers = new IntersectionObserver(revealSections, {
+  root: null,
+  threshold: 0.15,
+});
+
+allSectionss.forEach(function (section) {
+  sectionObservers.observe(section);
+  section.classList.add("section--hidden");
+});
 
 // test
 
