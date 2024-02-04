@@ -4,6 +4,20 @@
   box-sizing: border-box;
 }
 
+/* Chrome, Firefox, Opera, Safari */
+::selection {
+    background: #FFD700;
+
+}
+
+/* Internet Explorer, Edge */
+::-ms-selection {
+    background: #FFD700;
+
+}
+
+
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
