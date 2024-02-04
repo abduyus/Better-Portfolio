@@ -7,13 +7,13 @@
 /* Chrome, Firefox, Opera, Safari */
 ::selection {
     background: #FFD700;
-    color: #000;
+
 }
 
 /* Internet Explorer, Edge */
 ::-ms-selection {
     background: #FFD700;
-    color: #000;
+
 }
 
 
