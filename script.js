@@ -157,3 +157,7 @@ const observer = new IntersectionObserver(handleHeroSectionIntersect);
 
 // Start observing the hero section
 observer.observe(heroSection);
+
+const yearEl = document.querySelector(".footer-date");
+const currentYear = new Date().getFullYear();
+yearEl.textContent = currentYear;
