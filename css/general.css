@@ -6,17 +6,13 @@
 
 /* Chrome, Firefox, Opera, Safari */
 ::selection {
-    background: #FFD700;
-
+  background: #ffd700;
 }
 
 /* Internet Explorer, Edge */
 ::-ms-selection {
-    background: #FFD700;
-
+  background: #ffd700;
 }
-
-
 
 html {
   font-size: 62.5%;
@@ -25,6 +21,7 @@ html {
 
 body {
   font-family: "Inter", sans-serif;
+
   color: #555;
 }
 
